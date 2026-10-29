@@ -1,19 +1,17 @@
 from fastapi import FastAPI
-
-app = FastAPI()
-
+app=FastAPI()
+#localhost:8000/getStudents
 @app.get("/getStudents")
 def getStudents():
     return "get student method called"
-
-@app.post("/addStudents")
-def addStudents():
+#localhost:8000/addStudent => post
+@app.post("/addStudent")
+def addStudent():
     return "add student method called"
-
-@app.put("/updateStudents")
-def updateStudents():
+@app.put("/updateStudent")
+def updateStudent():
     return "update student method called"
-
-@app.delete("/deleteStudents")
-def deleteStudents():
+@app.delete("/deleteStudent")
+def deleteStudent():
     return "delete student method called"
+    

@@ -17,17 +17,18 @@ let taskSchema=mongoose.Schema({
         required:true,
         ref:'users'
     },
-    task_assignedTo:{
+     task_assignedTo:{
         type:mongoose.Schema.Types.ObjectId,
         required:true,
         ref:'users'
     },
-    task_Status:{
+    task_status:{
         type:String,
         enum:["pending","inprogress","completed"],
-        default:"pending"}
-    },{
-         timestamps:true
+        default:"pending"
+    }
+},{
+    timestamps:true
 })
 const task=mongoose.model('tasks',taskSchema);
 module.exports={task}
