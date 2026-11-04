@@ -1,0 +1,27 @@
+{
+  "name": "sample_mern_app_cse_a",
+  "version": "1.0.0",
+  "description": "hrmanagementsystem",
+  "homepage": "https://github.com/surendar77/sample_MERN_app_CSE_A#readme",
+  "bugs": {
+    "url": "https://github.com/surendar77/sample_MERN_app_CSE_A/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surendar77/sample_MERN_app_CSE_A.git"
+  },
+  "license": "ISC",
+  "author": "surendar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bootstrap": "^5.3.8",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2"
+  }
+}
