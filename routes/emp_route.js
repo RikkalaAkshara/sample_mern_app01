@@ -18,12 +18,19 @@ router.post("/login",async (req,res)=>{
     if(emailcheck){
 let passcheck=await bcrypt.compare(data.password,emailcheck.password);
      if(passcheck){
-        res.send("login successfull");
+        res.send({"msg":"login successfull",
+            "user":{
+                _id:emailcheck._id,
+                name:emailcheck.name,
+                email:emailcheck.email,
+                role:emailcheck.role
+            }
+        });
      }else{
-        res.send("password wrong")
+        res.send({"msg":"login failed"})
      }
     }else{
-        res.send("user not found");
+        res.send({"msg":"user not found"});
     }
 })
 
